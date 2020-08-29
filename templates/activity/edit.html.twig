@@ -50,7 +50,7 @@
                   console.log(val);
                   const $summernote = $('#activity_edit_form_comment');
                     $summernote.summernote({
-                      dialogsInBody:{{app.request.xmlHttpRequest}},
+                      dialogsInBody:{{app.request.xmlHttpRequest ? "true": "false"}},
                       callbacks: {
                         onImageUpload: function (files) {
                                                     
